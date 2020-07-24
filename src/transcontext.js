@@ -1,6 +1,8 @@
+import { createContext } from "react";
+
 const initialTransactions = [
 {amount:500 , desc:"Cash"},
-{amount:-150 , desc:"Redbull"},
-{amount:-200 , desc:"EasyLoad"}
+{amount:-200 , desc:"Redbull"},
+{amount:-150 , desc:"EasyLoad"}
 ]
 export const TransactionContext = createContext(initialTransactions);

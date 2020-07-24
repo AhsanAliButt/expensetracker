@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import {TransactionContext} from './transContext';
 
 
 function Child() {
-    let transactions=[
-        {amount: 500, desc: "Cash"},
-        {amount: -150, desc: "Redbull"},
-        {amount: -200, desc: "EasyLoad"},
-    ]
+    let transactions = useContext(TransactionContext);
     return (
         <div className="container">
             <h1 className="text-centre">Expense Tracker App</h1>
+            <h3>Your Balance<br /> $150 </h3>
         <div className="expense-container">
             <h2>Income <br />$500</h2>
             <h2>Expense?<br />$250</h2>
