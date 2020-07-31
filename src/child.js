@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import {TransactionContext} from './transContext';
+import {TransactionContext} from './transcontext';
 
 
 function Child() {
-    let transactions = useContext(TransactionContext);
+    let {transactions} = useContext(TransactionContext);
+    console.log(transactions)
     return (
         <div className="container">
             <h1 className="text-centre">Expense Tracker App</h1>
